@@ -91,9 +91,7 @@ long long listdir(struct node *rt)
        
         if (strcmp(dp->d_name, ".") != 0 && strcmp(dp->d_name, "..") != 0 && dp->d_type != DT_LNK)
         {
-          
-          //  printf("%s\n",  strcat(path, dp->d_name));
-              // create new node
+                        // create new node
                  
             struct node* temp= new node;
           //  printf("%s\n", rt->dir);
@@ -122,6 +120,5 @@ long long listdir(struct node *rt)
    
     closedir(dir);
   }
- // printf("rt %s\n",rt->file_size);
     return rt->file_size;
 }
