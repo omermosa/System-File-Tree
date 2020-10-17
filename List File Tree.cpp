@@ -62,7 +62,7 @@ int main()
     // Directory path to list files
     
     struct node *rt=new node;   
-    rt->dir="C:\";
+    rt->dir="/";
    
     long int parent_dir_siz=listdir(rt);
     printf("dir is %s, size is %lld \n", rt->dir.c_str(), parent_dir_siz);
